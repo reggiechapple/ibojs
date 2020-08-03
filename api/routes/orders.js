@@ -5,13 +5,18 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
   res.status(200).json({
     message: "Handling GET requests to /orders"
-  })
+  });
 });
 
 router.post('/', (req, res, next) => {
+  var order = {
+    productId: req.body.productId
+  };
+
   res.status(201).json({
-    message: "Handling POST requests to /orders"
-  })
+    message: "Handling POST requests to /orders",
+    newOrder: order
+  });
 });
 
 router.get('/:orderId', (req, res, next) => {
@@ -21,25 +26,25 @@ router.get('/:orderId', (req, res, next) => {
     res.status(200).json({
       message: 'You discovered the special ID',
       id: id
-    })
+    });
   }
   else {
     res.status(200).json({
       message: `You entered the following ID: ${id}`
-    })
+    });
   }
 });
 
 router.patch('/:orderId', (req, res, next) => {
   res.status(200).json({
     message: "Updated product"
-  })
+  });
 });
 
 router.delete('/:orderId', (req, res, next) => {
   res.status(200).json({
     message: "Deleted product"
-  })
+  });
 });
 
 
