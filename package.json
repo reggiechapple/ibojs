@@ -1,0 +1,22 @@
+{
+  "name": "ibojs",
+  "version": "0.1.0",
+  "description": "another js app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reggiechapple/ibojs.git"
+  },
+  "author": "Reginald Chapple",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/reggiechapple/ibojs/issues"
+  },
+  "homepage": "https://github.com/reggiechapple/ibojs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
